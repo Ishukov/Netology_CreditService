@@ -1,5 +1,3 @@
-import java.text.DecimalFormat;
-
 public class Main {
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
@@ -12,21 +10,21 @@ public class Main {
         credit = 1000000;
         percent = 9.99;
         years = 1;
-        payment =  service.calculate(credit,percent,years);
-        System.out.println("Ежемесячный платеж на 1 год составит: " + payment + " руб." );
+        payment = service.calculate(credit, percent, years);
+        System.out.println("Ежемесячный платеж на 1 год составит: " + payment + " руб.");
 
         // Второй расчет
         credit = 1000000;
         percent = 9.99;
         years = 2;
-        payment =  service.calculate(credit,percent,years);
-        System.out.println("Ежемесячный платеж на 2 года составит: " + payment + " руб." );
+        payment = service.calculate(credit, percent, years);
+        System.out.println("Ежемесячный платеж на 2 года составит: " + payment + " руб.");
 
         // Третий расчет
         credit = 1000000;
         percent = 9.99;
         years = 3;
-        payment =  service.calculate(credit,percent,years);
-        System.out.println("Ежемесячный платеж на 3 года составит: " + payment + " руб." );
+        payment = service.calculate(credit, percent, years);
+        System.out.println("Ежемесячный платеж на 3 года составит: " + payment + " руб.");
     }
 }
